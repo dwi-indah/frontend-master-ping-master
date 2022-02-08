@@ -12,8 +12,12 @@ function submitForm() {
     const emailVal = email.value;
     if(!validateEmail(emailVal)) {
         label.classList.remove('hidden');
+        email.classList.remove('border-primary-800');
+        email.classList.add('border-primary-200');
     } else {
         label.classList.add('hidden');
+        email.classList.add('border-primary-800');
+        email.classList.remove('border-primary-200');
     }
 }
 
